@@ -1,0 +1,27 @@
+{
+  "name": "huaweicloud-open-capability-home",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Vue and Vite portal for Huawei Cloud open capability home.",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite --config vite.config.mjs --host 127.0.0.1 --port 5176",
+    "build": "vite build --config vite.config.mjs",
+    "preview": "vite preview --config vite.config.mjs --host 127.0.0.1 --port 4176",
+    "crawl:icons": "node scripts/huaweicloud-icons-crawler.cjs",
+    "verify": "node scripts/verify-engineering-foundation.cjs",
+    "lint": "npm run build && npm run verify",
+    "test:unit": "node --test scripts/*.test.cjs",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "dependencies": {
+    "vue": "3.5.40"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "5.2.4",
+    "vite": "6.4.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,8 @@
+portal-obs.config
+.agent_context/
+.multica/
+AGENTS.md
+description.md
+node_modules/
+dist/
+portal/public/*
